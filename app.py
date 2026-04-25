@@ -135,7 +135,7 @@ else:
     # --- ԱՎԵԼԱՑՆՈՒՄ ԵՆՔ ԲԱՆՆԵՐԸ ---
     # use_container_width=True -ն անում է այնպես, որ նկարը հարմարվի հեռախոսի էկրանի լայնությանը
     try:
-        st.image("math-banner.png", use_container_width=True)
+        st.image("math_banner.png", use_container_width=True)
     except:
         st.error("Նկարը չհաջողվեց բեռնել։ Ստուգեք ֆայլի անունը GitHub-ում։")
         
