@@ -26,7 +26,7 @@ st.markdown("""
     }
     </style>
     <div class="main-title">📐 Երկրաչափական Հաշվիչ</div>
-    """, unsafe_allow_case=True)
+    """, unsafe_allow_html=True)
 
 main_choice = st.sidebar.radio("Ընտրեք բաժինը", ["Գլխավոր", "ՀԱՐԹԱՉԱՓՈՒԹՅՈՒՆ", "ՏԱՐԱԾԱՉԱՓՈՒԹՅՈՒՆ"])
 
