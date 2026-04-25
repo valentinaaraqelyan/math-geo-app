@@ -7,7 +7,6 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
 st.set_page_config(page_title="Երկրաչափական Հաշվիչ", page_icon="📐", layout="wide")
 
-st.title("📐 Երկրաչափական Հաշվիչ")
 
 # CSS՝ վերնագիրը հեռախոսի էկրանին հարմարեցնելու համար
 st.markdown("""
@@ -134,4 +133,4 @@ elif main_choice == "ՏԱՐԱԾԱՉԱՓՈՒԹՅՈՒՆ":
 
 else:
     st.write("### Բարի գալուստ:")
-    st.write("Ընտրեք բաժինը ձախ կողմի մենյուից")
+    st.write("Ձախ անկյունի մենյուից ընտրեք երկրաչափության հետաքրքրող բաժինը")
