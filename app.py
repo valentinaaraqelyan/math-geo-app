@@ -132,5 +132,16 @@ elif main_choice == "ՏԱՐԱԾԱՉԱՓՈՒԹՅՈՒՆ":
     st.pyplot(fig)
 
 else:
-    st.write("### Բարի գալուստ:")
-    st.write("Ձախ անկյունի մենյուից ընտրեք երկրաչափության հետաքրքրող բաժինը")
+    st.pyplot(fig)
+
+else:
+    # --- ԱՎԵԼԱՑՆՈՒՄ ԵՆՔ ԲԱՆՆԵՐԸ ---
+    # use_container_width=True -ն անում է այնպես, որ նկարը հարմարվի հեռախոսի էկրանի լայնությանը
+    try:
+        st.image("math-banner.png", use_container_width=True)
+    except:
+        st.error("Նկարը չհաջողվեց բեռնել։ Ստուգեք ֆայլի անունը GitHub-ում։")
+        
+    st.write("<h3 style='text-align: center; color: #1E3A8A;'>Բարի գալուստ</h3>", unsafe_allow_html=True)
+    st.write("<p style='text-align: center;'>Ձախ անկյունի մենյուից ընտրեք երկրաչափության հետաքրքրող բաժինը</p>", unsafe_allow_html=True)
+
