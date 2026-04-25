@@ -9,6 +9,25 @@ st.set_page_config(page_title="Երկրաչափական Հաշվիչ", page_icon
 
 st.title("📐 Երկրաչափական Հաշվիչ")
 
+# CSS՝ վերնագիրը հեռախոսի էկրանին հարմարեցնելու համար
+st.markdown("""
+    <style>
+    .main-title {
+        font-size: 28px !important;
+        font-weight: bold;
+        text-align: center;
+        color: #1E3A8A;
+        line-height: 1.2;
+    }
+    @media (max-width: 600px) {
+        .main-title {
+            font-size: 20px !important;
+        }
+    }
+    </style>
+    <div class="main-title">📐 Երկրաչափական Հաշվիչ</div>
+    """, unsafe_allow_case=True)
+
 main_choice = st.sidebar.radio("Ընտրեք բաժինը", ["Գլխավոր", "ՀԱՐԹԱՉԱՓՈՒԹՅՈՒՆ", "ՏԱՐԱԾԱՉԱՓՈՒԹՅՈՒՆ"])
 
 # --- 2D ԲԱԺԻՆ ---
@@ -114,6 +133,5 @@ elif main_choice == "ՏԱՐԱԾԱՉԱՓՈՒԹՅՈՒՆ":
     st.pyplot(fig)
 
 else:
-    st.image("https://img.freepik.com/free-vector/geometry-education-background-vector-frame-blue_53876-117510.jpg")
     st.write("### Բարի գալուստ:")
-    st.write("Ընտրեք բաժինը ձախից")
+    st.write("Ընտրեք բաժինը ձախ կողմի մենյուից")
