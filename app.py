@@ -132,9 +132,6 @@ elif main_choice == "ՏԱՐԱԾԱՉԱՓՈՒԹՅՈՒՆ":
     st.pyplot(fig)
 
 else:
-    st.pyplot(fig)
-
-else:
     # --- ԱՎԵԼԱՑՆՈՒՄ ԵՆՔ ԲԱՆՆԵՐԸ ---
     # use_container_width=True -ն անում է այնպես, որ նկարը հարմարվի հեռախոսի էկրանի լայնությանը
     try:
